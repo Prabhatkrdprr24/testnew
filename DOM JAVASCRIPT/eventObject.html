@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1">dprr is a company</h1>
+    <script>
+        const content=document.querySelector("#id1");
+        content.addEventListener("click",function fun(event){
+            console.log(event);
+            let ele=document.createElement('h2');
+            ele.className="cs1";
+            ele.textContent="brand";
+            document.body.appendChild(ele);
+        })
+    </script>
+</body>
+</html>

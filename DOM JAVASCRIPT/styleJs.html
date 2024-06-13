@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="  tc tc1 tc2">dprr is a company</h1>
+    <script>
+        let content=document.querySelector(".tc");
+        console.log(content);
+
+        // content.style.color="red";
+          //or
+        content.style.cssText="color:green;background-color:grey;";
+
+        content.setAttribute("title","brand");
+        content.setAttribute("style","color:yellow;background-color:pink");
+        content.setAttribute("id","id8");
+
+        console.log(content.className);
+        console.log(content.className.trim().split(" "));
+
+        console.log(content.classList);
+    </script>
+</body>
+</html>

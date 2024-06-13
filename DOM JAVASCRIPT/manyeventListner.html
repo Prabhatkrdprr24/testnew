@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1">hello</h1>
+            <!-- Method-01 -->
+    <!-- <script>
+        let wrapper=document.createElement('div');
+        for(let i=1;i<=100;i++){
+            let content=document.createElement('p');
+            content.textContent="This is para "+i;
+
+            content.addEventListener('click',function (){
+                console.log("i have clicked");
+            })
+
+            wrapper.appendChild(content);
+        }
+        document.body.appendChild(wrapper);
+    </script> -->
+
+        <!-- Method-02
+        <script>
+            function paraFun(){
+                console.log("i have clicked");
+            }
+            let wrapper=document.createElement('div');
+            for(let i=1;i<=100;i++){
+                let content=document.createElement('p');
+                content.textContent="This is para "+i;
+                content.addEventListener('click',paraFun)
+                wrapper.appendChild(content);
+            }
+            document.body.appendChild(wrapper);
+        </script> -->
+
+        <!-- Method-04 -->
+        <script>
+            function paraFun(event){
+                console.log("i have clicked"+event.target.textContent);
+            }
+            let wrapper=document.createElement('div');
+            for(let i=1;i<=100;i++){
+                let content=document.createElement('p');
+                content.textContent="This is para "+i;
+                wrapper.appendChild(content);
+            }
+            wrapper.addEventListener('click',paraFun);
+            document.body.appendChild(wrapper);
+        </script>
+</body>
+</html>

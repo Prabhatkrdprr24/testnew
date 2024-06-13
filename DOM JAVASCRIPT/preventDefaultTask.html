@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.facebook.com/" id="id1">Facebook1</a>
+    <a href="https://www.facebook.com/" id="id2">Facebook2</a>
+    <a href="https://www.facebook.com/" id="id3">Facebook3</a>
+    <script>
+        let links=document.querySelectorAll("a");
+        console.log(links);
+        let thirdLink=links[2];
+        console.log(thirdLink);
+        thirdLink.addEventListener("click",function(event){
+            event.preventDefault();
+            console.log("Good");
+        })
+    </script>
+</body>
+</html>

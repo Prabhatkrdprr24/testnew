@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article id="id1">
+        <p>para1<span>span1</span></p>
+        <p>para2<span>span2</span></p>
+        <p>para3<span>span3</span></p>
+    </article>
+
+    <script>
+        let wrapper=document.querySelector('#id1');
+        wrapper.addEventListener('click',function fun(event){
+            if(event.target.nodeName=='SPAN'){
+                console.log('span clicked'+event.target.textContent);
+            }
+        });
+    </script>
+</body>
+</html>

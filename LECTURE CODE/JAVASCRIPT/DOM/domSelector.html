@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id -->
+    <p id="one"><span>Hello</span>Namaste</p>
+
+    <!-- class -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+
+    <!-- tag name -->
+    <h4>hey</h4>
+    <h4>namste</h4>
+    <h4>Hola</h4>
+
+    <!-- query selector -->
+    <h2>Hello</h2>
+    <h2 class="classs">How are you</h2>
+    <h2 id="ids">fine</h2>
+
+    <script>
+          //id
+        let var1=document.getElementById("one");
+        console.log(var1);
+        console.log(var1.innerText);
+        console.log(var1.innerHTML);
+
+          //class
+        let var2=document.getElementsByClassName("tech");
+        console.log(var2);
+        console.log(var2[2]);
+        console.log(var2[2].innerText);
+        var2[1].innerText="dprr";
+        var2[1].style.color="red";
+
+          //tag name
+        let var3=document.getElementsByTagName("h4");
+        console.log(var3);
+        console.log(var3[1].innerText);
+        var3[2].innerText="Hello dprr";
+        var3[2].style.color="red";
+          //query selector
+        let var4=document.querySelector("h2");
+        let var5=document.querySelector(".classs");
+        let var6=document.querySelector("#ids");
+        console.log(var4);
+        console.log(var5);
+        console.log(var6);
+        // var5.className="rk";
+        var5.classList="rrkk pk dprr";
+        var5.setAttribute("id","ak");
+        var5.setAttribute("title","dprr");
+    </script>
+</body>
+</html>

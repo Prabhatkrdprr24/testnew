@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form  action="/signup" target="_blank" method="get">
+        <h1>Registration Form</h1>
+        <fieldset>
+            <legend>Personal Information :</legend>
+            <div class="fc" id="fid">
+                <div id="usern">
+                    <label for="name">Username :</label>
+                    <input type="text" name="username" id="name" value="dprr" readonly disabled>
+                </div>
+                <div id="">
+                    <label for="mail">Email :</label>
+                    <input type="text" name="email" id="mail" placeholder="a@gmail.com" autofocus>
+                </div>
+                <div id="password" >
+                    <label for="pass" >Password :</label>
+                    <input type="password" id="pass" name="password" autofocus>
+                </div>
+                <div id="">
+                    <label for="dob">Date of Birth :</label>
+                    <input type="date" name="" id="dob" name="dob">
+                </div>
+                <div id="description">
+                    <label for="descr">Breif Your Description :</label>
+                    <br>
+                    <textarea name="description" id="" cols="30" rows="10" id="descr"></textarea>
+                </div>
+                <div id="radio">
+                    <label for="gen">Gender :</label>
+
+                    <input type="radio" name="gender" value="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" value="others">
+                    <label for="">Others</label>
+                </div>
+                <div id="cbc" class="cbid">
+                    <label for="">Subjects :</label>
+                    <br>
+
+                    <input type="checkbox" id="s1" name="subject" value="html">
+                    <label for="s1">HTML</label>
+                    <br>
+                    <input type="checkbox" id="s2" value="css" name="subject">
+                    <label for="s2">CSS</label>
+                    <br>
+                    <input type="checkbox" id="s3" value="js" name="subject">
+                    <label for="s3">JavaScript</label>
+                </div>
+
+                <label for="no">Number :</label>
+                <input type="number" name="num" id="no" min="0" max="8">
+                <br>
+                
+                <label for="time">Time :</label>
+                <input type="time" name="time" id="time">
+
+                <div id="butid" class="butc">
+                    
+                    <!-- <button type="submit">Submit</button> -->
+                        <!-- or -->
+                    <input type="submit" name="" id="" value="Submit Form">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

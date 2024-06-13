@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="classs">Data strucutre</p>
+    <p class="classs2">Data strucutre</p>
+    <script>
+        let newEle=document.createElement('p');
+        newEle.className="newClass";
+        newEle.id="id1";
+        let oldEle=document.querySelector(".classs");
+        console.log(oldEle);
+        oldEle.appendChild(newEle);
+        console.log(oldEle);
+
+        let newEle2=document.createElement('p');
+        newEle2.className="newClass2";
+        newEle2.id="id2";
+
+        // newEle2.innerText="dprr is a Company";
+          //or
+        newEle2.textContent="dprr is a Company";
+            // oorr
+        // let newtext=document.createTextNode("dprr is a Company");
+        // newEle2.appendChild(newtext);
+        
+        let oldEle2=document.querySelector(".classs2");
+
+        //oldEle2.appendChild(newEle2);
+
+        console.log(oldEle2);
+        oldEle2.appendChild(newEle2);
+        console.log(oldEle2);
+    </script>
+</body>
+</html>

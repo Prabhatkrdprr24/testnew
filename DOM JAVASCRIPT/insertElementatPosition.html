@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="testc" id="testid">
+        dprr id a company
+        <p id="p2">Hii</p>
+        <p id="p3">Hiii3</p>
+    </h2>
+    <script>
+            // afterbegin,beforebegin,afterend,beforeend are position where we can insert new element using js
+        let oldEle=document.querySelector(".testc");
+        let newEle=document.createElement('p');
+        newEle.className="nc";
+        newEle.textContent="Hello";
+        oldEle.insertAdjacentElement("afterbegin",newEle);
+        console.log(oldEle);
+
+        let childEle=document.querySelector("#p2");
+        console.log(childEle);
+
+        // oldEle.removeChild(childEle);
+          // or
+        childEle.parentNode.removeChild(childEle);
+
+        console.log(oldEle);
+    </script>
+</body>
+</html>
